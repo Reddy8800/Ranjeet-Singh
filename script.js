@@ -10,6 +10,18 @@ function updateTimer() {
 
   el.textContent = time + "s";
 
+  // Update the large central counter (if present)
+  const big = document.getElementById('big-counter');
+  if (big) {
+    // show just the number (no 's')
+    big.textContent = String(time);
+    // small pulse animation by toggling a class
+    big.classList.remove('pulse');
+    // trigger reflow then add class to restart animation
+    void big.offsetWidth;
+    big.classList.add('pulse');
+  }
+
   time--;
   if (time < 0) {
     time = 60;

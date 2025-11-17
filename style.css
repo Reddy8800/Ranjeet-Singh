@@ -4,8 +4,8 @@ body {
   text-align: center;
   color: #fff;
 
-  /* Background Image */
-  background-image: url('bg.jpg');  /* make sure bg.jpg exists in folder */
+  /* Background Image: prefer 'cricket-bg.jpg' in project root; falls back to 'bg.jpg' */
+  background-image: url('cricket-bg.jpg'), url('bg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -47,6 +47,27 @@ body {
   font-size: 48px;
   font-weight: bold;
   color: #ffcc00;
+}
+
+/* Big central countdown under the title */
+.big-counter {
+  color: #ffd400;
+  font-weight: 900;
+  font-size: clamp(48px, 12vw, 160px);
+  margin: 10px auto 6px;
+  text-shadow: 0 6px 18px rgba(0,0,0,0.6);
+  letter-spacing: 1px;
+}
+
+/* simple pulse animation when seconds update */
+.big-counter.pulse {
+  animation: pulse 360ms ease-out;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.06); }
+  100% { transform: scale(1); }
 }
 
 .sub-brand {
