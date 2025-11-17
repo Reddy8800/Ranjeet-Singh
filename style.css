@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: #fff;
+
+  /* Background Image */
+  background-image: url('bg.jpg');  /* make sure bg.jpg exists in folder */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* Optional dark overlay */
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: darken;
+}
+
+.container {
+  padding: 40px 20px;
+}
+
+.title {
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 18px;
+  color: #ddd;
+  margin-bottom: 30px;
+}
+
+.badge-circle {
+  width: 160px;
+  height: 160px;
+  background: url('badge.png');
+  background-size: cover;
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.badge-circle span {
+  font-size: 48px;
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+.sub-brand {
+  margin-top: 10px;
+  font-size: 22px;
+  color: #f9d541;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.stats {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.stats p {
+  margin: 10px 0;
+  color: #fff;
+}
+
+.cta-btn {
+  display: block;
+  width: 90%;
+  margin: 35px auto 20px;
+  padding: 18px 25px;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+  background: #ffd400;
+  border-radius: 12px;
+}
+
+.timer-text {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.timer-text span {
+  color: #ffd400; /* yellow */
+  font-weight: 900;
+  font-size: 22px;
+  margin-left: 6px;
+}
+
+.footer-text {
+  margin-top: 25px;
+  font-size: 20px;
+  font-weight: bold;
+}
