@@ -20,9 +20,10 @@ body {
 }
 
 .title {
-  font-size: 42px;
+  font-size: 40px;
   font-weight: bold;
   margin-bottom: 10px;
+  color: #ffd400;
 }
 
 .tagline {
